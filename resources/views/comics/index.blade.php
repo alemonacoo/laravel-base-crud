@@ -11,7 +11,10 @@
     <div>
         <a href="{{route('comics.show', $comic['id'])}}">{{ $comic['title']}}</a>
     </div>
-        
     @endforeach
+    <hr>
+    <div>
+        <a href="{{route('comics.create')}}">Crea nuovo fumetto</a>
+    </div>
 </body>
 </html>
