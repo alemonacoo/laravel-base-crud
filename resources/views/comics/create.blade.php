@@ -8,7 +8,8 @@
 </head>
 <body>
     <div>
-        <form action="">
+        <form method="POST" action="{{ route('comics.store') }}">
+            @csrf
             <div>
             <label for="title">Titolo:</label>
             <input type="text" name="title">
@@ -42,6 +43,9 @@
             <div>
             <label for="type">Tipo:</label>
             <input type="text" name="type">
+            </div>
+            <div>
+            <input type="submit" value="Invia">
             </div>
         </form>
 
