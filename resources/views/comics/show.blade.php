@@ -3,3 +3,4 @@
 <div>{{$comic['price']}}</div>
 <div>{{$comic['series']}}</div>
 
+<a href="{{route('comics.index')}}">BACK</a>
